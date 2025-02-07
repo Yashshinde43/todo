@@ -1,4 +1,3 @@
-
 import mongoose from "mongoose";
 
 // Task schema
@@ -16,9 +15,9 @@ const taskSchema = new mongoose.Schema({
     default: false, // Default to false when a new task is added
   },
   user: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'User', // Reference to the User model
-    required: true, // Ensure every task has an associated user
+    type: mongoose.Schema.Types.ObjectId, 
+    ref: "User", // Reference to the User model
+    required: true,
   },
 }, { timestamps: true });
 

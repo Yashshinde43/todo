@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { ClipboardList, Plus, X } from "lucide-react";
 import axios from "axios";
 import { toast } from "react-toastify";
