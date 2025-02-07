@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Login from './components/Login';
 import SignUp from './components/Signup';
-import Todo from './components/todo';
+import Todo from './components/Todo';
 import Mail from './components/Mail';
 const App = () => {
   return (
