@@ -15,7 +15,7 @@ export default function Login() {
       // Simple login logic
       console.log("Login attempt:", { email, password });
       // Add your login logic here
-      const response = await axios.post("http://localhost:5000/api/loginuser", {
+      const response = await axios.post("https://todo-1-29fz.onrender.com/api/loginuser", {
         email,
         password,
       });
