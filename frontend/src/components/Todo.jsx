@@ -17,7 +17,7 @@ function Todo() {
       if (!title.trim()) return;
 
       const response = await axios.post(
-        "http://localhost:5000/newtask",
+        "https://todo-1-29fz.onrender.com/newtask",
         {
           title: title,
           description: description,
@@ -43,7 +43,7 @@ function Todo() {
 
   const handleLogout = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/api/logoutuser");
+      const response = await axios.post("https://todo-1-29fz.onrender.com/api/logoutuser");
       console.log(response);
       localStorage.removeItem("token");
       navigate("/");
@@ -54,7 +54,7 @@ function Todo() {
 
   const deleteTodo = (index) => {
     try {
-      axios.delete(`http://localhost:5000/deletetask/${index}`,{
+      axios.delete(`https://todo-1-29fz.onrender.com/deletetask/${index}`,{
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -72,7 +72,7 @@ function Todo() {
   useEffect(() => {
     try {
       const fetchData = async () => {
-        const result = await axios.get("http://localhost:5000/getalltask", {
+        const result = await axios.get("https://todo-1-29fz.onrender.com/getalltask", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
